@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about Rclone Drive Migration, a locally operated Google Drive migration utility.">
+  <title>Rclone Drive Migration</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: #edf3fb;
+      background: #0b1220;
+    }
+
+    header {
+      padding: 24px 8%;
+      border-bottom: 1px solid #26364d;
+      background: #121d30;
+    }
+
+    header strong { font-size: 20px; }
+
+    main {
+      max-width: 950px;
+      margin: auto;
+      padding: 65px 25px;
+    }
+
+    .eyebrow {
+      color: #83d6b0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 58px);
+      line-height: 1.1;
+      margin: 18px 0;
+    }
+
+    h2 { margin-top: 35px; }
+
+    .lead {
+      font-size: 19px;
+      color: #aab8ca;
+    }
+
+    .notice {
+      margin: 30px 0;
+      padding: 20px;
+      background: #142b29;
+      border-left: 4px solid #83d6b0;
+      border-radius: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin: 35px 0;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid #26364d;
+      border-radius: 12px;
+      background: #121d30;
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .card p, .description {
+      color: #aab8ca;
+    }
+
+    a { color: #8ab4ff; }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      margin: 10px 8px 0 0;
+      border: 1px solid #45658e;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 30px 8%;
+      border-top: 1px solid #26364d;
+      color: #aab8ca;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <strong>↗ Rclone Drive Migration</strong>
+</header>
+
+<main>
+
+  <div class="eyebrow">
+    Locally Operated File Migration Utility
+  </div>
+
+  <h1>Move Google Drive files with care.</h1>
+
+  <p class="lead">
+    Rclone Drive Migration is a locally operated workflow
+    that uses the open-source rclone command-line program
+    to copy selected files and folders between Google Drive
+    accounts.
+  </p>
+
+  <div class="notice">
+    <strong>Important:</strong> This website does not connect
+    to Google Drive, request sign-in, or receive your files.
+    The actual migration is initiated and run by the operator
+    on their own computer using rclone.
+  </div>
+
+  <h2>How it works</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>1. Authorize accounts</h3>
+      <p>
+        The operator configures separate rclone connections
+        for the source and destination Google accounts through
+        Google's OAuth authorization process.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>2. Select folders</h3>
+      <p>
+        The operator chooses a source folder and a destination
+        folder. Files within nested folders can also be copied.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>3. Copy files</h3>
+      <p>
+        The workflow uses rclone's copy operation. Original
+        source files are not intentionally deleted.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>4. Verify results</h3>
+      <p>
+        Local logs and comparison tools help identify files
+        that may not have copied successfully.
+      </p>
+    </div>
+
+  </div>
+
+  <h2>What this utility does not do</h2>
+
+  <p class="description">
+    This is not a hosted file-transfer service. It does not
+    provide a website upload form, store Drive content on a
+    web server, sell or share Google user data, or use Google
+    Drive data for advertising.
+  </p>
+
+  <p class="description">
+    Copying files is not the same as transferring Google Drive
+    ownership. File IDs, sharing permissions, and version
+    histories may not be preserved.
+  </p>
+
+  <a class="button" href="privacy.html">
+    Read Privacy Policy
+  </a>
+
+  <a class="button" href="https://rclone.org/drive/">
+    rclone Documentation
+  </a>
+
+</main>
+
+<footer>
+  <p>
+    <strong>Operator:</strong>
+    [REPLACE WITH YOUR NAME OR ORGANIZATION]
+  </p>
+
+  <p>
+    <strong>Contact:</strong>
+    [REPLACE WITH A CONTACT EMAIL]
+  </p>
+
+  <p>
+    This is an independent utility and is not affiliated
+    with or endorsed by Google.
+  </p>
+</footer>
+
+</body>
+</html>
